@@ -259,7 +259,7 @@ caracteres e etc.
 - ***Route53 DNS***, utilizado para resolução DNS, para aplicação e para os 
 serviços como banco de dados.
 - ***AWS WAF***, regras para bloqueio de uso indevido da API, exemplos:
-*SQL Injection (SQLi)*, *Cross Site Scripting (XXS)*, *Distributed Denial of
+*SQL Injection (SQLi)*, *Cross Site Scripting (XSS)*, *Distributed Denial of
 Service (DDoS)*. 
 - ***ALB - Load Balance***, balanceamento de carga entre os recursos.
 - ***API Gateway***, desacopla a aplicação do acesso direto do cliente,
