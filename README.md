@@ -244,6 +244,7 @@ Abaixo são relacionadas algumas melhorias que podem ser feitas:
 - Implementação de Value Objects, para casos como do tipo email.
 - Implementar o Error Handling do Spring Boot.
 - Utilizar o Flyway para gestão de migração (`migration`) do banco de dados.
+- Não expor o id do banco de dados.
 - Implementar HATEOS para os endpoints.
 - Durante a criação da senha, validar requisitos mínimos, como tamanho, 
 caracteres e etc. 
