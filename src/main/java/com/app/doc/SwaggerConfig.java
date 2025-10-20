@@ -32,7 +32,7 @@ public class SwaggerConfig {
                         .contact(new Contact()
                                 .name("Ricardo Ludwig")
                                 .email("dev@gmail.com")
-                                .url("https://github.com/ricardoludwig/java-springboot")))
+                                .url("https://github.com/ricardoludwig/seguro")))
                 .servers(List.of(
                         new Server().url("http://localhost:8080").description("Servidor Local")
                 ));
