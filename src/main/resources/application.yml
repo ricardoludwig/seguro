@@ -1,0 +1,35 @@
+server:
+  port: ${PORT:8080}
+jwt_secret: cmljYXJkby5sdWR3aWctdGVzdGUK
+spring:
+  application:
+    name: seguro
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seguro?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    platform: mysql
+    schema: classpath:/sql/schema.sql
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update #none
+    show-sql: true
+logging:
+  file: application.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    ROOT: INFO
+    org.springframework.web: INFO
+    org.hibernate: ERROR
+    org.springframework.security: INFO
+    template.spring: ERROR
+springdoc:
+  api-docs:
+    path: /api/docs
+  swagger-ui:
+    path: "/api/docs/swagger-ui-custom.html"
